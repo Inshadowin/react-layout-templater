@@ -1,0 +1,21 @@
+.wyn-template-builder-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 100%;
+
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+
+:root {
+  --wyn-template-background: white;
+  --wyn-template-board-background: white;
+  --wyn-template-selector-background: white;
+}
+
+.wyn-template-builder-container .wyn-template-board + .wyn-template-selector {
+  margin-left: var(--wyn-size-grid-2);
+}
